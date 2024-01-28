@@ -2,8 +2,7 @@ let totalPrice = 0;
 
 function getShippingMessage(country, price, deliveryFee) {
     totalPrice = price + deliveryFee;
-    const message = `Shipping to ${country} will cost ${totalPrice} credits`;
-    return message;
+    return `Shipping to ${country} will cost ${totalPrice} credits`;
 }
 
 console.log(getShippingMessage("Australia", 120, 50)); // "Shipping to Australia will cost 170 credits"
